@@ -31,7 +31,7 @@ hi IncSearch								guibg=#000000	guifg=#bbcccc
 hi LineNr										guibg=#050505	guifg=#4682b4
 hi ModeMsg																guifg=#ffffff
 hi MoreMsg													 			guifg=#44ff44
-hi NonText																guifg=#4444ff
+hi NonText																guifg=#8f8f8f
 hi Question																guifg=#ffff00
 hi SpecialKey															guifg=#4444ff
 hi StatusLine			gui=none	guibg=#2f4f4f	guifg=#ffffff
