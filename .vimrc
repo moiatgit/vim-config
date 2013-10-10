@@ -9,14 +9,16 @@ colorscheme darkburn
 "
 " coding
 set filetype        " filetype detection on
+syntax on           " syntax highlight
 filetype plugin on  " plugin detection
 set autochdir       " always switch to the current file directory
 set number          " line numbers
 set hlsearch        " highlight search
 set incsearch       " show search matches while typing
 " change highlight colors for search to ease distinction
-highligh Search guibg=LightGrey guifg=DarkBlue
-highligh IncSearch guibg=DarkBlue guifg=Yellow
+highligh Search     guibg=DarkYellow guifg=DarkGreen
+highligh IncSearch  guibg=DarkBlue guifg=Yellow
+highligh Cursor     guibg=Yellow guifg=DarkBlue
 set showmatch       " show matching elements
 set ignorecase      " case unsensitive search
 set smartcase       " if there are caps go case-sensitive
@@ -40,6 +42,7 @@ set tabstop=4       " tab with
 set shiftwidth=4    " tabs
 set softtabstop=4   " tabs
 set expandtab       " don't use real tabs
+set textwidth=70    " default width
 "
 " backups
 set backup           " backup files
@@ -56,8 +59,10 @@ checktime
 set autoread
 "
 " Some filetype distinctions
-autocmd Filetype rst set textwidth=70
+set formatoptions-=t                        " to avoid general autowrapping
+autocmd Filetype rst set syntax=rst         " define reStructuredText syntax
 autocmd Filetype rst set formatoptions-=q   " to avoid considering * as comments
+autocmd Filetype rst set formatoptions+=t   " to allow autowrapping
 autocmd Filetype rst behave mswin           " allow ctrl-shif selection
 autocmd Filetype rst set spell              " spell check on
 autocmd Filetype rst set spelllang=ca       " spell language catalan
@@ -71,16 +76,18 @@ autocmd Filetype rst set comments=fb:-,fb:*,fb://
 if has('unnamedplus') 
     set clipboard=unnamedplus,autoselect " Use + register (X Window clipboard) as unnamed register
 endif
-" Elimina la toolbar
-set guioptions-=T
+
+" Remove some gui options
+set guioptions-=T   " Elimina la toolbar
+set guioptions-=m   " remove the menu bar
 
 " Remove scrollbars: useful for tiling wm as Awesome WM.
-:set guioptions-=L
-:set guioptions-=l
-:set guioptions-=R
-:set guioptions-=r
-:set guioptions-=b
-:set guioptions-=h
+set guioptions-=L   " remove left scrollbars: on splitted windows
+set guioptions-=l   " remove left scrollbar
+set guioptions-=R   " remove right scrollbar on
+set guioptions-=r   " remove right scrollbar
+set guioptions-=b   " remove bottom scrollbar
+set guioptions-=h   " limit the scrolling to the current cursor line
 "
 "
 " Afegeix un $ al final del text afectat per una comanda (c)hange
