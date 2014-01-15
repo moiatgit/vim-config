@@ -100,3 +100,7 @@ autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.tpl
 "nnoremap <c-Tab> /<+.\{-1,}+><cr>c/+>/e<cr>
 "inoremap <c-Tab> <ESC>/<+.\{-1,}+><cr>c/+>/e<cr>
 
+" Mapping for continued indentation on visual
+vnoremap > >gv
+vnoremap < <gv
+
