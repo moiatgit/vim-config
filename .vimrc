@@ -104,3 +104,5 @@ autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.tpl
 vnoremap > >gv
 vnoremap < <gv
 
+" Mapping for fast :nohlsearch
+nmap <C-h> :noh<CR>

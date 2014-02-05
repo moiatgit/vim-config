@@ -1,10 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/mnt/dades/home/moi/Feina/pelican.apuntstecnics/themes/moitheme/templates'
-let g:netrw_dirhist_2='/mnt/dades/home/moi/Estudi/mondodb/homework4/hw4-3'
-let g:netrw_dirhist_3='/mnt/dades/home/moi/Estudi/mondodb/code'
-let g:netrw_dirhist_4='/mnt/dades/home/moi/Estudi/mongodb/java/M101J/src'
-let g:netrw_dirhist_5='/mnt/dades/home/moi/Estudi/mongodb/java/M101J/src/main'
-let g:netrw_dirhist_6='/mnt/dades/home/moi/Estudi/mongodb/java/M101J/src/main/java'
-let g:netrw_dirhist_7='/mnt/dades/home/moi/Estudi/mongodb/java/M101J/src/main/java/com'
-let g:netrw_dirhist_8='/mnt/dades/home/moi/Estudi/mongodb/java/M101J/src/main/java/com/tengen'
+let g:netrw_dirhist_cnt =0
