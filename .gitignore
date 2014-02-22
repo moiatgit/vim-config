@@ -1,2 +1,4 @@
 .vim/.netrwhist
+bundle/**
+~bundle/vundle
 

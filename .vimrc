@@ -11,10 +11,11 @@ filetype plugin indent on
 Bundle 'gmarik/vundle'
 
 " My bundles
-Bundle 'https://github.com/Rykka/riv.vim.git'
+Bundle 'git@github.com:moiatgit/vim-rst-sections.git'
+" Bundle 'https://github.com/Rykka/riv.vim.git'
 Bundle 'darkburn'
 Bundle 'surround.vim'
-
+Bundle 'SpellCheck'
 
 "
 " Encoding
@@ -81,6 +82,10 @@ nmap <C-h> :noh<CR>
 checktime
 set autoread
 
+" allow ctrl-shif selection
+behave mswin
+
+"
 " share clipboard with system's
 set clipboard=unnamedplus
 
@@ -103,4 +108,5 @@ set cpoptions+=$
 " càrrega de templates (si existeixen)
 autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.tpl
 "
-
+" disable riv auto folding behavior
+let g:riv_fold_auto_update=0
