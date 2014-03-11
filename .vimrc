@@ -3,6 +3,7 @@
 
 set nocompatible
 filetype off
+let mapleader = "¡"
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -16,6 +17,7 @@ Bundle 'git@github.com:moiatgit/vim-rst-sections.git'
 Bundle 'darkburn'
 Bundle 'surround.vim'
 Bundle 'SpellCheck'
+Bundle 'Tabular'
 
 "
 " Encoding
