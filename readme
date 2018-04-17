@@ -1,9 +1,0 @@
-This repository contains a .vimrc more or less updated
-
-It is here just for my convenience but if it gets useful for you, please
-feel free to use it at your own risk/discretion.
-
-WARNING: I'm using vundle and you might want to install it first and create a
-dummy .vimrc before replacing it with, or modifying it inspired by, this one.
-
-Suggestions will be appreciated of course!
